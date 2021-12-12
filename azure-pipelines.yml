@@ -1,9 +1,5 @@
 # Xcode
-- task: InstallAppleCertificate@2
-  inputs:
-    certSecureFile: 'Certificates.p12'
-    certPwd: 'Waliany19%$'
-    keychain: 'temp'
+
 # Build, test, and archive an Xcode workspace on macOS.
 # Add steps that install certificates, test, sign, and distribute an app, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
@@ -23,3 +19,8 @@ steps:
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, 11, 12, default, specifyPath
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'Certificates.p12'
+    certPwd: 'Waliany19%$'
+    keychain: 'temp'
