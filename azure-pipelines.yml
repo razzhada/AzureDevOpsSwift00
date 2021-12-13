@@ -28,4 +28,4 @@ steps:
   inputs:
     provisioningProfileLocation: 'secureFiles'
     provProfileSecureFile: 'AzureDevOpsSwift00AdHocDist.mobileprovision'
-    removeProfile: false
+    removeProfile: true
