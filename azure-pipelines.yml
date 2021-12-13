@@ -24,3 +24,8 @@ steps:
     certSecureFile: 'Certificates.p12'
     certPwd: 'Waliany19%$'
     keychain: 'temp'
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'secureFiles'
+    provProfileSecureFile: 'AzureDevOpsSwift00AdHocDist.mobileprovision'
+    removeProfile: false
